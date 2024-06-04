@@ -1,7 +1,7 @@
 <?php
 $dbConnection = mysqli_connect("localhost", "my_user", "my_password", "world");
 
-$userInput = $_REQUEST['userInput']; // <-- User input source
+$userInput = $_REQUEST['userInput']; // <-- Taint source
 $unsafeQuery = "SELECT * FROM Users WHERE username = '{$userInput}'"; // <-- Taint propagated to variable
 
 function generateQuery($userId) {
