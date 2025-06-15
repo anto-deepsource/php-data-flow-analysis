@@ -5,7 +5,11 @@ class AnotherClass extends MyClass {
     $this->number++;
   }
 
-  public function getNumber() {
+  private function getNumber() {
+    return $this->number;
+  }
+
+  protected function getNumber1() {
     return $this->number;
   }
 }
