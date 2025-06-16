@@ -2,5 +2,3 @@ version = 1
 
 [[analyzers]]
 name = "php"
-  [analyzers.meta]
-  skip_doc_coverage = ["nonpublic"]
